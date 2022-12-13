@@ -43,7 +43,7 @@ def TreeConstruction(domainsize, User_list, epsilon):
 
         else:    #访问非根节点
             tmpdomain = current_node.data.Interval
-            g = NUDTOOL.best_granularity_calculation(NUD_Tree, current_node, domainsize, epsilon)  #返回最优g###################################################未完成
+            g = NUDTOOL.best_granularity_calculation(NUD_Tree, current_node, domainsize, epsilon)  #返回最优g#完成
             current_node.data.granularity = g
             au_num = current_node.data.AvailableUser_num
             domain_len = current_node.data.Interval_len
